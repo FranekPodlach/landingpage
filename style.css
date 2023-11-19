@@ -1,0 +1,180 @@
+body {
+    margin: 0px;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #34b5c3;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar > img {
+    height: 5vh;
+}
+
+.navbar-anchors {
+    margin-right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+a {
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+a:hover {
+    color: #2a939f;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img-home {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.text-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    width: 35%;
+    text-align: left;
+    color: #34b5c3;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7vh;
+    padding: 5%;
+    padding-top: 0%;
+}
+
+button {
+    width: 50%;
+    margin-top: 5%;
+    background-color: #34b5c3;
+    border-color: #34b5c3;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+    border: 3px solid #34b5c3;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3.5vh;
+    padding: 10px;
+    height: 10vh;
+    color: white;
+}
+
+button:hover {
+    background-color: #ffffff00; 
+    color: #34b5c3;
+}
+
+.breakpoint {
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+    color: #34b5c3;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5vh;
+    margin: 0 5% 5% 5%;
+}
+
+.paragraph {
+    font-family: "Josefin Sans", sans-serif;
+    text-align:justify;
+    font-size: medium;
+    justify-content: space-between;
+    color: #2a939f;
+    margin: 0 5% 5% 5%;
+}
+
+.text {
+    width: 40%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.6vh;
+}
+
+.photo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#first-element {
+    float: right;
+}
+
+.photo > img {
+    height: 30vh;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    height: 15vh;
+}
+
+.footer {
+    background-color: #34b5c3;
+    margin: 0;
+    color: white;
+    font-family: "Josefin Sans";
+    display: flex;
+    justify-content: right;
+    padding: 15px 10px 15px 10px;
+}
+
+@media (max-width: 850px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .text-home {
+        margin-top: 10%;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        font-size: 1.5vh;
+    }
+
+    #background-img {
+        height: 40vh;
+    }
+
+    #first-element {
+        float: none;
+    }
+
+    .text {
+        width: 80%;
+        font-size: 1.4vh;
+    }
+
+    .photo {
+        width: 80%;
+    }
+
+    .paragraph {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
